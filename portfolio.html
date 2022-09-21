@@ -32,37 +32,42 @@
     <header class="header">
       <div class="container header-container">
         <nav class="main-nav">
-          <a class="logo" href="./index.html" lang="en"
-            ><span class="logo-span">Web</span>Studio</a
+          <a class="logo header__logo" href="./index.html" lang="en"
+            >Web<span class="logo--dark-theme">Studio</span></a
           >
           <ul class="site-nav list">
-            <li><a class="link" href="./index.html">Студія </a></li>
-            <li class="portfolio-line">
-              <a class="link current link-portfolio" href="./portfolio.html"
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="./index.html">Студія </a></li>
+            <li class="site-nav__item">
+              <a class="link link site-nav__link site-nav__link--current link-portfolio" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li><a class="link" href="#">Контакти</a></li>
+            <li class="site-nav__item">
+              <a class="link link site-nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
+
         <ul class="auth-nav list">
           <li>
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon" width="16" height="12">
+            <a class="link auth-nav__link" href="mailto:info@devstudio.com">
+              <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link" href="tel:+380961111111">
-              <svg class="icon" width="12" height="16">
+            <a class="link auth-nav__link" href="tel:+380961111111">
+              <svg class="auth-nav__icon" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        
+        
       </div>
     </header>
 
@@ -81,12 +86,12 @@
         </div>
 
         <!-- Gallery -->
-        <div class="container">
-          <ul class="gallery list">
+        <div class="gallery container">
+          <ul class="gallery__list list">
             <!-- 1 -->
-            <li class="gallery-list">
-              <a class="gallery-item link" href="">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-1.jpg"
@@ -94,8 +99,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -104,17 +109,17 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">Технокряк</h2>
-                  <p class="img-type">Веб-сайт</p>
+                <div class="gallery__text">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__subtitle">Веб-сайт</p>
                 </div></a
               >
             </li>
 
             <!-- 2 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-2.jpg"
@@ -122,8 +127,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -132,19 +137,19 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">
+                <div class="gallery__text">
+                  <h2 class="gallery__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="img-type">Дизайн</p>
+                  <p class="gallery__subtitle">Дизайн</p>
                 </div></a
               >
             </li>
 
             <!-- 3 -->
-            <li class="gallery-list">
-              <a class="gallery-item link" href="">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-3.jpg"
@@ -152,8 +157,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -162,19 +167,19 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">
+                <div class="gallery__text">
+                  <h2 class="gallery__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="img-type">Додаток</p>
+                  <p class="gallery__subtitle">Додаток</p>
                 </div></a
               >
             </li>
 
             <!-- 4 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-4.jpg"
@@ -182,8 +187,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -192,17 +197,17 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">Проєкт <span lang="en">Prime</span></h2>
-                  <p class="img-type">Маркетинг</p>
+                <div class="gallery__text">
+                  <h2 class="gallery__title">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="gallery__subtitle">Маркетинг</p>
                 </div></a
               >
             </li>
 
             <!-- 5 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-5.jpg"
@@ -210,8 +215,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -220,17 +225,17 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">Проєкт <span lang="en">Boxes</span></h2>
-                  <p class="img-type">Додаток</p>
+                <div class="gallery__text">
+                  <h2 class="gallery__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="gallery__subtitle">Додаток</p>
                 </div></a
               >
             </li>
 
             <!-- 6 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-6.jpg"
@@ -238,8 +243,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -248,19 +253,19 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">
+                <div class="gallery__text">
+                  <h2 class="gallery__title">
                     <span lang="en">Inspiration has no Borders</span>
                   </h2>
-                  <p class="img-type">Веб-сайт</p>
+                  <p class="gallery__subtitle">Веб-сайт</p>
                 </div></a
               >
             </li>
 
             <!-- 7 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-7.jpg"
@@ -268,8 +273,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -278,19 +283,19 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">
+                <div class="gallery__text">
+                  <h2 class="gallery__title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="img-type">Дизайн</p>
+                  <p class="gallery__subtitle">Дизайн</p>
                 </div></a
               >
             </li>
 
             <!-- 8 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-8.jpg"
@@ -298,8 +303,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -308,17 +313,17 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">Проєкт <span lang="en">LAB</span></h2>
-                  <p class="img-type">Маркетинг</p>
+                <div class="gallery__text">
+                  <h2 class="gallery__title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="gallery__subtitle">Маркетинг</p>
                 </div></a
               >
             </li>
 
             <!-- 9 -->
-            <li class="gallery-list">
-              <a href="" class="gallery-item link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__thumb">
                   <img
                     class="img"
                     src="./images/page-portfolio/img-9.jpg"
@@ -326,8 +331,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p>
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -336,11 +341,11 @@
                   </div>
                 </div>
 
-                <div class="item-text">
-                  <h2 class="img-name">
+                <div class="gallery__text">
+                  <h2 class="gallery__title">
                     <span lang="en">Growing Business</span>
                   </h2>
-                  <p class="img-type">Додаток</p>
+                  <p class="gallery__subtitle">Додаток</p>
                 </div></a
               >
             </li>
@@ -353,10 +358,10 @@
      <footer class="footer">
       <div class="container footer-container">
         <div class="contacts">
-          <a href="/" class="logo-footer" lang="en"
-            ><span class="logo-span">Web</span>Studio</a
+          <a href="/" class="logo footer__logo" lang="en"
+            >Web<span class="logo--light-theme">Studio</span></a
           >
-
+      
           <address class="adress list">
             <ul class="auth-list list">
               <li class="auth-item">
@@ -445,7 +450,7 @@
           </ul>
         </div>
 
-        <div name="subscribe-group">
+        <div class="subscribe-group">
           <strong class="subscribe-group-title">Підпишіться на розсилку</strong>
           <form class="subscribe-form">
             <label class="subscribe-form-field">
