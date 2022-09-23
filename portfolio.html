@@ -25,6 +25,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!--  -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
@@ -37,14 +40,18 @@
           >
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a class="link site-nav__link" href="./index.html">Студія </a></li>
+              <a class="link site-nav__link" href="./index.html">Студія </a>
+            </li>
             <li class="site-nav__item">
-              <a class="link link site-nav__link site-nav__link--current link-portfolio" href="./portfolio.html"
+              <a
+                class="link link site-nav__link site-nav__link--current site-nav__link--size-portfolio"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
             <li class="site-nav__item">
-              <a class="link link site-nav__link" href="#">Контакти</a></li>
+              <a class="link link site-nav__link" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -66,8 +73,6 @@
             >
           </li>
         </ul>
-        
-        
       </div>
     </header>
 
@@ -77,11 +82,11 @@
         <!-- Фильтр кнопок -->
         <div class="container">
           <ul class="filtr list">
-            <li><button class="btn current-btn" type="button">Усі</button></li>
-            <li><button class="btn" type="button">Веб-сайти</button></li>
-            <li><button class="btn" type="button">Додатки</button></li>
-            <li><button class="btn" type="button">Дизайн</button></li>
-            <li><button class="btn" type="button">Маркетинг</button></li>
+            <li><button class="filtr__btn filtr__btn--current-btn" type="button">Веб-сайти</button></li>
+            <li><button class="filtr__btn" type="button">Додатки</button></li>
+            <li><button class="filtr__btn" type="button">Усі</button></li>
+            <li><button class="filtr__btn" type="button">Дизайн</button></li>
+            <li><button class="filtr__btn" type="button">Маркетинг</button></li>
           </ul>
         </div>
 
@@ -198,7 +203,9 @@
                 </div>
 
                 <div class="gallery__text">
-                  <h2 class="gallery__title">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
                   <p class="gallery__subtitle">Маркетинг</p>
                 </div></a
               >
@@ -226,7 +233,9 @@
                 </div>
 
                 <div class="gallery__text">
-                  <h2 class="gallery__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="gallery__subtitle">Додаток</p>
                 </div></a
               >
@@ -314,7 +323,9 @@
                 </div>
 
                 <div class="gallery__text">
-                  <h2 class="gallery__title">Проєкт <span lang="en">LAB</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
                   <p class="gallery__subtitle">Маркетинг</p>
                 </div></a
               >
@@ -354,19 +365,19 @@
       </section>
     </main>
 
-     <!--FOOTER-->
-     <footer class="footer">
-      <div class="container footer-container">
-        <div class="contacts">
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-group">
           <a href="/" class="logo footer__logo" lang="en"
             >Web<span class="logo--light-theme">Studio</span></a
           >
-      
-          <address class="adress list">
-            <ul class="auth-list list">
-              <li class="auth-item">
+
+          <address class="contacts">
+            <ul class="contacts__list list">
+              <li class="contacts__item">
                 <a
-                  class="link"
+                  class="contacts__link link"
                   href="https://goo.gl/maps/wsndduZ66pt86pKw6"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -374,18 +385,18 @@
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="auth-item">
+              <li class="contacts__item">
                 <a
-                  class="link transparent"
+                  class="contacts__link link contacts__link--transparent"
                   href="mailto:info@devstudio.com"
                   target="_blank"
                   rel="noopener norefferer nofollow"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="auth-item">
+              <li class="contacts__item">
                 <a
-                  class="link transparent"
+                  class="contacts__link link contacts__link--transparent"
                   href="tel:+380961111111"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -397,74 +408,74 @@
         </div>
 
         <div class="join">
-          <strong class="join-title">Приєднуйтесь</strong>
-          <ul class="join-list list">
-            <li class="join-item">
+          <strong class="join__title">Приєднуйтесь</strong>
+          <ul class="join__list list">
+            <li class="join__item">
               <a
-                class="join-link"
+                class="join__link"
                 href="https://instagram.com"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noopener noferrer"
               >
-                <svg class="join-icon" width="20" height="20">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="join-item list">
+            <li class="join__item list">
               <a
-                class="join-link"
+                class="join__link"
                 href="https://twitter.com"
                 aria-label="Twitter"
                 target="_blank"
                 rel="noopener noferrer"
-                ><svg class="join-icon" width="20" height="20">
+                ><svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item list">
+            <li class="join__item list">
               <a
-                class="join-link"
+                class="join__link"
                 href="https://facebook.com"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noferrer"
-                ><svg class="join-icon" width="20" height="20">
+                ><svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="join-item list">
+            <li class="join__item list">
               <a
-                class="join-link"
+                class="join__link"
                 href="https://linkedin.com"
                 aria-label="LinkedIn"
                 target="_blank"
                 rel="noopener noferrer"
-                ><svg class="join-icon" width="20" height="20">
+                ><svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
 
-        <div class="subscribe-group">
-          <strong class="subscribe-group-title">Підпишіться на розсилку</strong>
+        <div class="subscribe">
+          <strong class="subscribe__title">Підпишіться на розсилку</strong>
           <form class="subscribe-form">
-            <label class="subscribe-form-field">
+            <label class="subscribe-form__field">
               <input
-                class="subscribe-form-input"
+                class="subscribe-form__input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="subscribe-form-btn" type="submit">
-              <span class="subscribe-form-btn-name">Відправити</span>
-              <svg class="subscribe-form-icon" width="24" height="24">
+            <button class="subscribe-form__btn button" type="submit">
+              <span class="subscribe-form__btn-name">Відправити</span>
+              <svg class="subscribe-form__btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
@@ -472,6 +483,5 @@
         </div>
       </div>
     </footer>
-     
   </body>
 </html>
