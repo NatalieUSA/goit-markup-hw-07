@@ -16,19 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Modern normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <!--  -->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!--HEADER - Шапка сайта-->
@@ -38,26 +28,26 @@
           <a class="logo header__logo" href="./index.html" lang="en"
             >Web<span class="logo--dark-theme">Studio</span></a
           >
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="link site-nav__link" href="./index.html">Студія </a>
+              <a class="site-nav__link" href="./index.html">Студія </a>
             </li>
             <li class="site-nav__item">
               <a
-                class="link link site-nav__link site-nav__link--current site-nav__link--size-portfolio"
+                class="site-nav__link site-nav__link--current site-nav__link--size-portfolio"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
             <li class="site-nav__item">
-              <a class="link link site-nav__link" href="#">Контакти</a>
+              <a class="site-nav__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="auth-nav list">
+        <ul class="auth-nav">
           <li>
-            <a class="link auth-nav__link" href="mailto:info@devstudio.com">
+            <a class="auth-nav__link" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -65,7 +55,7 @@
             >
           </li>
           <li>
-            <a class="link auth-nav__link" href="tel:+380961111111">
+            <a class="auth-nav__link" href="tel:+380961111111">
               <svg class="auth-nav__icon" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -81,7 +71,7 @@
         <h1 class="visually-hidden">Наші проекти</h1>
         <!-- Фильтр кнопок -->
         <div class="container">
-          <ul class="filtr list">
+          <ul class="filtr">
             <li><button class="filtr__btn filtr__btn--current-btn" type="button">Веб-сайти</button></li>
             <li><button class="filtr__btn" type="button">Додатки</button></li>
             <li><button class="filtr__btn" type="button">Усі</button></li>
@@ -92,10 +82,10 @@
 
         <!-- Gallery -->
         <div class="gallery container">
-          <ul class="gallery__list list">
+          <ul class="gallery__list">
             <!-- 1 -->
             <li class="gallery__item">
-              <a class="gallery__link link" href="">
+              <a class="gallery__link" href="">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -123,7 +113,7 @@
 
             <!-- 2 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -153,7 +143,7 @@
 
             <!-- 3 -->
             <li class="gallery__item">
-              <a class="gallery__link link" href="">
+              <a class="gallery__link" href="">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -183,7 +173,7 @@
 
             <!-- 4 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -213,7 +203,7 @@
 
             <!-- 5 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -243,7 +233,7 @@
 
             <!-- 6 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -273,7 +263,7 @@
 
             <!-- 7 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -303,7 +293,7 @@
 
             <!-- 8 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -333,7 +323,7 @@
 
             <!-- 9 -->
             <li class="gallery__item">
-              <a href="" class="gallery__link link">
+              <a href="" class="gallery__link">
                 <div class="gallery__thumb">
                   <img
                     class="img"
@@ -374,10 +364,10 @@
           >
 
           <address class="contacts">
-            <ul class="contacts__list list">
+            <ul class="contacts__list">
               <li class="contacts__item">
                 <a
-                  class="contacts__link link"
+                  class="contacts__link"
                   href="https://goo.gl/maps/wsndduZ66pt86pKw6"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -387,7 +377,7 @@
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link link contacts__link--transparent"
+                  class="contacts__link contacts__link--transparent"
                   href="mailto:info@devstudio.com"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -396,7 +386,7 @@
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link link contacts__link--transparent"
+                  class="contacts__link contacts__link--transparent"
                   href="tel:+380961111111"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -409,7 +399,7 @@
 
         <div class="join">
           <strong class="join__title">Приєднуйтесь</strong>
-          <ul class="join__list list">
+          <ul class="join__list">
             <li class="join__item">
               <a
                 class="join__link"
@@ -424,7 +414,7 @@
               </a>
             </li>
 
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://twitter.com"
@@ -436,7 +426,7 @@
                 </svg>
               </a>
             </li>
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://facebook.com"
@@ -447,7 +437,7 @@
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://linkedin.com"

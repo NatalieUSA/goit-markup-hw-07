@@ -1,10 +1,13 @@
 .gallery__list {
+  @extend %list; 
+  
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .gallery__link {
+  @extend %link;
     cursor: pointer;
     display: block;
   
@@ -39,10 +42,7 @@
   }
 }
 
-
-
 /* GALLERY OVERLAY */
-
 .gallery__thumb {
   position: relative;
   width: 370px;

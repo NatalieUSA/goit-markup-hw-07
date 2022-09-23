@@ -20,7 +20,7 @@
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
- 
+
     color: var(--hero-txt-cl);
     font-weight: 900;
     font-size: 44px;
@@ -30,6 +30,8 @@
   }
 
   &__button {
+    @extend %button;
+    
     padding: 10px 32px;
     color: var(--hero-txt-cl);
     font-family: inherit;

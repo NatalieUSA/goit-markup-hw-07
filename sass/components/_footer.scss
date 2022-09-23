@@ -17,21 +17,27 @@
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  &__link {
-    color: var(--btn-txt-cl);
-    font-style: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-
-    transition: color var(--duration) var(--timing-function);
+  &__list {
+    @extend %list;
   }
+}
 
-  &__link:hover,
-  &__link:focus {
+.contacts__link {
+  @extend %link;
+
+  color: var(--btn-txt-cl);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
     color: var(--accent-txt-cl);
   }
 
-  &__link--transparent {
+  &--transparent {
     color: var(--footer-link-cl);
   }
 }
@@ -39,6 +45,10 @@
 // JOIN
 .join {
   margin-right: auto;
+
+  &__item {
+    @extend %list;
+  }
 
   &__title {
     display: flex;
@@ -56,25 +66,23 @@
     gap: 10px;
   }
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--icon-footer-elipce-cl);
-    border-radius: 50%;
-    cursor: pointer;
-
-    transition: background-color var(--duration) var(--timing-function);
-  }
-
   &__icon {
     fill: var(--btn-txt-cl);
   }
+}
 
-  &__link:hover,
-  &__link:focus {
+.join__link {
+  @extend %flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--icon-footer-elipce-cl);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
     background-color: var(--btn-hover-cl);
   }
 }
@@ -98,29 +106,29 @@
     display: flex;
     margin-right: 12px;
   }
+}
 
-  &__input {
-    height: 50px;
-    width: 358px;
-    padding-left: 16px;
+.subscribe-form__input {
+  height: 50px;
+  width: 358px;
+  padding-left: 16px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: var(--box-shadow-button);
-    border-radius: var(--border-radius-button);
-    /* outline: transparent; */
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--btn-txt-cl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: var(--box-shadow-button);
+  border-radius: var(--border-radius-button);
+  /* outline: transparent; */
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--btn-txt-cl);
 
-    transition: border-color var(--duration) var(--timing-function);
-  }
+  transition: border-color var(--duration) var(--timing-function);
 
-  &__input:hover,
-  &__input:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-bcg-cl);
   }
 
-  &__input::placeholder {
+  &::placeholder {
     display: flex;
     align-items: center;
 
@@ -129,8 +137,12 @@
     letter-spacing: 0.03em;
     color: var(--footer-link-cl);
   }
+}
 
+.subscribe-form {
   &__btn {
+    @extend %button;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,8 +154,6 @@
     height: 50px;
 
     border-style: none;
-
-    transition: background-color var(--duration) var(--timing-function);
   }
 
   &__btn-icon {

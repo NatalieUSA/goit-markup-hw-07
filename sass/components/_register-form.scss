@@ -20,7 +20,7 @@
   display: block;
   position: relative;
 
-  &__field:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -95,6 +95,7 @@
   }
 }
 
+// CHECKBOX
 .register-form__agreement {
   display: flex;
   justify-content: center;
@@ -104,36 +105,37 @@
 
 .register-form__icons {
   margin-right: 9px;
-
-  &-checked {
-    opacity: 0;
-  }
-
-  &--unchecked {
-    opacity: 1;
-    fill: #212121;
-  }
-  
 }
-.register-form__icons:focus {
-    border-color: var(--accent-bcg-cl);
-  
-  }
 
-.register-form__checkbox:focus + .register-form__icons .icon-unchecked {
+.register-form__icons--checked {
+  opacity: 0;
+}
+.register-form__icons--unchecked {
+  opacity: 1;
+  fill: #212121;
+}
+.register-form__checkbox:focus
+  + .register-form__icons
+  .register-form__icons--unchecked {
   transition: opacity var(--duration) var(--timing-function);
   fill: #188ce8;
 }
 
-.register-form__checkbox:checked + .register-form__icons .icon-checked {
+.register-form__checkbox:checked
+  + .register-form__icons
+  .register-form__icons--checked {
   opacity: 1;
   transition: opacity var(--duration) var(--timing-function);
 }
 
-.register-form__checkbox:checked + .register-form__icons .icon-unchecked {
+.register-form__checkbox:checked
+  + .register-form__icons
+  .register-form__icons--unchecked {
   opacity: 0;
   transition: opacity var(--duration) var(--timing-function);
 }
+
+
 .register-form {
   &__desc {
     font-size: 14px;
@@ -149,6 +151,8 @@
 }
 
 .register-form-btn {
+  @extend %button;
+
   display: block;
   margin: 0 auto;
   width: 200px;
@@ -162,3 +166,5 @@
     background-color: var(--btn-hover-cl);
   }
 }
+
+

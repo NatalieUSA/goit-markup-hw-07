@@ -17,13 +17,14 @@
       rel="stylesheet"
     />
     <!-- Modern normalize -->
-    <link
+   
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
 
     <!--  -->
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -38,25 +39,25 @@
           <a class="logo header__logo" href="./index.html" lang="en"
             >Web<span class="logo--dark-theme">Studio</span></a
           >
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
               <a
-                class="link site-nav__link site-nav__link--current site-nav__link--size"
+                class="site-nav__link site-nav__link--current site-nav__link--size"
                 href="./index.html"
                 >Студія
               </a>
             </li>
             <li>
-              <a class="link site-nav__link" href="./portfolio.html"
+              <a class="site-nav__link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li><a class="link site-nav__link" href="#">Контакти</a></li>
+            <li><a class="site-nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
+        <ul class="auth-nav">
           <li>
-            <a class="auth-nav__link link" href="mailto:info@devstudio.com">
+            <a class="auth-nav__link" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -64,7 +65,7 @@
             >
           </li>
           <li>
-            <a class="link auth-nav__link" href="tel:+380961111111">
+            <a class="auth-nav__link" href="tel:+380961111111">
               <svg class="auth-nav__icon" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -80,7 +81,7 @@
       <section class="hero">
         <div class="container">
           <h2 class="hero__slogan">Ефективні рішення для вашого бізнесу</h2>
-          <button class="hero__button button" type="button" data-modal-open>
+          <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -90,14 +91,14 @@
       <section class="section">
         <div class="features container">
           <h2 class="visually-hidden">Наші конкурентні переваги</h2>
-          <ul class="features__list list">
+          <ul class="features__list">
             <li class="features__item">
               <div class="features__rectangle">
                 <svg class="" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle list">Увага до деталей</h3>
+              <h3 class="features__subtitle">Увага до деталей</h3>
               <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -111,7 +112,7 @@
                 </svg>
               </div>
 
-              <h3 class="features__subtitle list">Пунктуальність</h3>
+              <h3 class="features__subtitle">Пунктуальність</h3>
               <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -124,7 +125,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle list">Планування</h3>
+              <h3 class="features__subtitle">Планування</h3>
               <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -136,7 +137,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle list">Сучасні технології</h3>
+              <h3 class="features__subtitle">Сучасні технології</h3>
               <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -151,7 +152,7 @@
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="competition__list">
-            <li class="competition__item list">
+            <li class="competition__item">
               <img
                 class="img"
                 src="./images/1p-work/img11.jpg"
@@ -163,7 +164,7 @@
               <p class="competition__overlay">Десктопні додатки</p>
             </li>
 
-            <li class="competition__item list">
+            <li class="competition__item">
               <img
                 class="img"
                 src="./images/1p-work/img21.jpg"
@@ -176,7 +177,7 @@
               <p class="competition__overlay">Мобільні додатки</p>
             </li>
 
-            <li class="competition__item list">
+            <li class="competition__item">
               <img
                 class="img"
                 src="./images/1p-work/img31.jpg"
@@ -195,7 +196,7 @@
       <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="team__list list">
+          <ul class="team__list">
             <li class="team__item">
               <img
                 class="img"
@@ -207,10 +208,10 @@
               <div class="team__text">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
-                <ul class="socials list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://instagram.com"
                       aria-label="Instagram"
                       target="_blank"
@@ -224,7 +225,7 @@
 
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://twitter.com"
                       aria-label="Twitter"
                       target="_blank"
@@ -236,7 +237,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link list"
+                      class="socials__link"
                       href="https://facebook.com"
                       aria-label="Facebook"
                       target="_blank"
@@ -247,7 +248,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://linkedin.com"
                       aria-label="LinkedIn"
                       target="_blank"
@@ -271,10 +272,10 @@
               <div class="team__text">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
-                <ul class="socials list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://instagram.com"
                       aria-label="Instagram"
                       target="_blank"
@@ -288,7 +289,7 @@
 
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://twitter.com"
                       aria-label="Twitter"
                       target="_blank"
@@ -300,7 +301,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link list"
+                      class="socials__link"
                       href="https://facebook.com"
                       aria-label="Facebook"
                       target="_blank"
@@ -311,7 +312,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://linkedin.com"
                       aria-label="LinkedIn"
                       target="_blank"
@@ -335,10 +336,10 @@
               <div class="team__text">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
-                <ul class="socials list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://instagram.com"
                       aria-label="Instagram"
                       target="_blank"
@@ -352,7 +353,7 @@
 
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://twitter.com"
                       aria-label="Twitter"
                       target="_blank"
@@ -364,7 +365,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link list"
+                      class="socials__link"
                       href="https://facebook.com"
                       aria-label="Facebook"
                       target="_blank"
@@ -375,7 +376,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://linkedin.com"
                       aria-label="LinkedIn"
                       target="_blank"
@@ -399,10 +400,10 @@
               <div class="team__text">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
-                <ul class="socials list">
+                <ul class="socials">
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://instagram.com"
                       aria-label="Instagram"
                       target="_blank"
@@ -416,7 +417,7 @@
 
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://twitter.com"
                       aria-label="Twitter"
                       target="_blank"
@@ -428,7 +429,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link list"
+                      class="socials__link"
                       href="https://facebook.com"
                       aria-label="Facebook"
                       target="_blank"
@@ -439,7 +440,7 @@
                   </li>
                   <li class="socials__item">
                     <a
-                      class="socials__link link"
+                      class="socials__link"
                       href="https://linkedin.com"
                       aria-label="LinkedIn"
                       target="_blank"
@@ -459,7 +460,7 @@
       <section class="clients section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
-          <ul class="clients__list list">
+          <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
@@ -469,7 +470,7 @@
             </li>
             <li class="clients__item">
               <a
-                class="clients__link link"
+                class="clients__link"
                 href="#"
                 aria-label="Логотип компанії"
               >
@@ -480,7 +481,7 @@
             </li>
             <li class="clients__item">
               <a
-                class="clients__link link"
+                class="clients__link"
                 href="#"
                 aria-label="Логотип компанії"
               >
@@ -491,7 +492,7 @@
             </li>
             <li class="clients__item">
               <a
-                class="clients__link link"
+                class="clients__link"
                 href="#"
                 aria-label="Логотип компанії"
               >
@@ -502,7 +503,7 @@
             </li>
             <li class="clients__item">
               <a
-                class="clients__link link"
+                class="clients__link"
                 href="#"
                 aria-label="Логотип компанії"
               >
@@ -513,7 +514,7 @@
             </li>
             <li class="clients__tem">
               <a
-                class="clients__link link"
+                class="clients__link"
                 href="#"
                 aria-label="Логотип компанії"
               >
@@ -536,10 +537,10 @@
           >
 
           <address class="contacts">
-            <ul class="contacts__list list">
+            <ul class="contacts__list">
               <li class="contacts__item">
                 <a
-                  class="contacts__link link"
+                  class="contacts__link"
                   href="https://goo.gl/maps/wsndduZ66pt86pKw6"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -549,7 +550,7 @@
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link link contacts__link--transparent"
+                  class="contacts__link contacts__link--transparent"
                   href="mailto:info@devstudio.com"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -558,7 +559,7 @@
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link link contacts__link--transparent"
+                  class="contacts__link contacts__link--transparent"
                   href="tel:+380961111111"
                   target="_blank"
                   rel="noopener norefferer nofollow"
@@ -571,7 +572,7 @@
 
         <div class="join">
           <strong class="join__title">Приєднуйтесь</strong>
-          <ul class="join__list list">
+          <ul class="join__list">
             <li class="join__item">
               <a
                 class="join__link"
@@ -586,7 +587,7 @@
               </a>
             </li>
 
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://twitter.com"
@@ -598,7 +599,7 @@
                 </svg>
               </a>
             </li>
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://facebook.com"
@@ -609,7 +610,7 @@
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="join__item list">
+            <li class="join__item">
               <a
                 class="join__link"
                 href="https://linkedin.com"
@@ -635,7 +636,7 @@
                 required
               />
             </label>
-            <button class="subscribe-form__btn button" type="submit">
+            <button class="subscribe-form__btn" type="submit">
               <span class="subscribe-form__btn-name">Відправити</span>
               <svg class="subscribe-form__btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
@@ -726,7 +727,7 @@
             >
           </label>
 
-          <button class="register-form-btn button" type="submit">
+          <button class="register-form-btn" type="submit">
             <span>Відправити</span>
           </button>
         </form>
