@@ -1,7 +1,7 @@
 .logo {
   display: block;
 
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -13,7 +13,7 @@
   }
 
   &--light-theme {
-    color: var(--main-bcg-cl);
+    color: var(--light-cl);
   }
 }
 

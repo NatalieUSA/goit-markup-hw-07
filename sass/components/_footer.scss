@@ -25,7 +25,7 @@
 .contacts__link {
   @extend %link;
 
-  color: var(--btn-txt-cl);
+  color: var(--light-cl);
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -34,7 +34,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: var(--accent-cl);
   }
 
   &--transparent {
@@ -52,7 +52,7 @@
 
   &__title {
     display: flex;
-    color: var(--hero-txt-cl);
+    color: var(--light-cl);
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -67,7 +67,7 @@
   }
 
   &__icon {
-    fill: var(--btn-txt-cl);
+    fill: var(--light-cl);
   }
 }
 
@@ -90,7 +90,7 @@
 // SUBSCRIBE
 .subscribe__title {
   display: flex;
-  color: var(--hero-txt-cl);
+  color: var(--light-cl);
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -119,13 +119,13 @@
   /* outline: transparent; */
   cursor: pointer;
   background-color: transparent;
-  color: var(--btn-txt-cl);
+  color: var(--light-cl);
 
   transition: border-color var(--duration) var(--timing-function);
 
   &:hover,
   &:focus {
-    border-color: var(--accent-bcg-cl);
+    border-color: var(--accent-cl);
   }
 
   &::placeholder {
@@ -157,10 +157,10 @@
   }
 
   &__btn-icon {
-    fill: var(--btn-txt-cl);
+    fill: var(--light-cl);
   }
   &__btn-name {
     margin-right: auto;
-    color: var(--btn-txt-cl);
+    color: var(--light-cl);
   }
 }

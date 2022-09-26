@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--hero-txt-cl);
+  background-color: var(--light-cl);
   border-bottom: 1px solid var(--header-border-cl);
 }
 
@@ -38,7 +38,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: var(--accent-cl);
   }
 }
 
@@ -70,7 +70,7 @@
 
   &__link:hover,
   &__link:focus {
-    color: var(--accent-txt-cl);
+    color: var(--accent-cl);
   }
 }
 
@@ -80,7 +80,7 @@
 
   .auth-nav__link:hover &,
   .auth-nav__link:focus & {
-    fill: var(--accent-bcg-cl);
+    fill: var(--accent-cl);
   }
 }
 
@@ -98,7 +98,7 @@
   }
 
   &--current {
-    color: var(--accent-txt-cl);
+    color: var(--accent-cl);
   }
 
   &--current::after {
@@ -112,7 +112,7 @@
     height: 4px;
     width: 100%;
     border-radius: 2px;
-    background-color: var(--accent-bcg-cl);
+    background-color: var(--accent-cl);
   }
 }
 

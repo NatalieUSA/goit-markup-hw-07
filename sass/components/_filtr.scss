@@ -29,13 +29,13 @@
   &--current-btn {
     background-color: var(--btn-hover-cl);
     box-shadow: var(--box-shadow-active);
-    color: var(--btn-txt-cl);
+    color: var( --light-cl);
   }
 
   &:hover,
   &:focus {
-    color: var(--btn-txt-cl);
-    background-color: var(--accent-bcg-cl);
+    color: var(--light-cl);
+    background-color: var(--accent-cl);
     box-shadow: var(--box-shadow-active);
   }
 }

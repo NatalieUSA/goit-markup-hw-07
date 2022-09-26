@@ -21,7 +21,7 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
-    color: var(--hero-txt-cl);
+    color: var(--light-cl);
     font-weight: 900;
     font-size: 44px;
     letter-spacing: 0.06em;
@@ -33,7 +33,7 @@
     @extend %button;
     
     padding: 10px 32px;
-    color: var(--hero-txt-cl);
+    color: var(--light-cl);
     font-family: inherit;
     text-align: center;
     border: 0;
